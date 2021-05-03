@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudad de Papel</title>
+</head>
+<body>
+   
+    <div id="app">
+        <h1 v-html="saludo"> </h1>
+        <Vue-directivas></Vue-directivas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            data(){
+
+                return {
+                    saludo: 'Hola Mundo Vue<strong>Vue</strong>'
+                }
+            },
+
+            components: {
+                VueDirectivas
+            }
+
+        })
+
+
+    </script>
+
+</body>
+</html>
