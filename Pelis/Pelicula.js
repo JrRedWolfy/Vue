@@ -3,7 +3,7 @@ const BASEURL = 'https://api.themoviedb.org/3/'
 
 let Pelicula = {
     template: `
-         <div>
+        <div>
 
               <h2 v-html="titulo"></h2>
 
