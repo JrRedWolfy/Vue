@@ -31,7 +31,7 @@ let Libro = {
 
         getBooks(){
 
-            date = 10
+            date = 02
 
             do {
                 const URL = `https://www.etnassoft.com/api/v1/get/?keyword=&publisher_date=20${date}`

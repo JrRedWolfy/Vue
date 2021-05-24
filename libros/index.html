@@ -9,21 +9,25 @@
     <div id="app">
         
         <header>
-            <h1>CIUDAD DE LAS PALABRAS</h1>
+            <h1 v-html="titulo"></h1>
 
-            <nav>
-
-
-            </nav>
+            <categoria></categoria>
         </header>
+        <div>
+            <controlador></controlador>
+        </div>
 
 
-        <libro></libro>
+
+       <libro></libro>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="Expositor.js"></script>
     <script src="Libro.js"></script>
+    <script src="Categoria.js"></script>
+    <script src="Controlador.js"></script>
+
   
     <script>
         let vm = new Vue({
@@ -31,14 +35,14 @@
             data(){
 
                 return {
-                    
+                    titulo: 'CIUDAD DE LAS PALABRAS'
 
 
                 }
             },
 
             components: {
-                Libro
+                Libro, Categoria, Controlador
             }
 
         })
