@@ -1,0 +1,25 @@
+#marco{
+    background-color: silver;
+}
+
+#fijar {
+    text-align: center;
+    display: block;
+    width: 100%;
+    position: fixed;
+}
+
+.inline {
+    list-style: none;
+    float: left;
+}
+
+.inline button{
+    background-color: skyblue;
+}
+
+.portada {
+    display: inline-block;
+    block-size: 30% 10% 20%;
+}
+

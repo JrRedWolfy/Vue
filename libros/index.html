@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Ciudad de Papel</title>
+    <link rel="stylesheet" href="css/indexStylo.css" /> 
 </head>
-<body>
+<body id="marco">
    
     <div id="app">
         
-        <header>
+        <header id="fijar">
             <h1 v-html="titulo"></h1>
 
             <categoria></categoria>
+            <div>
+                <controlador></controlador>
+            </div>
         </header>
-        <div>
-            <controlador></controlador>
-        </div>
-
-
 
        <libro></libro>
     </div>
@@ -35,7 +34,7 @@
             data(){
 
                 return {
-                    titulo: 'CIUDAD DE LAS PALABRAS'
+                    titulo: 'CIUDAD DE PAPEL'
 
 
                 }
