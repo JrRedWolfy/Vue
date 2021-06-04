@@ -1,15 +1,26 @@
 #marco{
-    background-color: silver;
+    background-image: url("..libros/img/image.jpg");
 }
 
 #fijar {
 
+    border: 1px solid;
     text-align: center;
     display: block;
     background-color: seashell;
-    width: 100%;
+    width: 96%;
 
     position: fixed;
+    
+}
+
+.borde{
+    border: 1px solid;
+}
+
+.button{
+    border: 1px solid;
+    width: 186px;
 }
 
 .inline {
@@ -17,14 +28,24 @@
     float: left;
 }
 
+
 .inline button{
     background-color: skyblue;
 }
 
 .portada {
+
+    
     display: block;
-    float: right;
-    block-size: 10% 10% 20%;
+    border: red 5px solid;
+    float: left;
+    padding-top: 50px;
+    width: 430px;
+    height: 510px;
+    max-height: 510px;
+    text-align: center;
+
+
 }
 
 .end {
@@ -40,6 +61,5 @@
 }
 
 .bajar{
-    padding-top: 320px;
-    position: relative;
+    padding-top: 310px;
 }

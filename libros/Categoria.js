@@ -5,7 +5,7 @@ let Categoria = {
             <div v-for="(categoria, index) in categorias" :key="index"
             >
                 <ul class="inline">
-                <li><button>{{categoria.name | mayusculas}}</button></li>
+                <li><button class="button">{{categoria.name | mayusculas}}</button></li>
                 </ul>
             </div>
 

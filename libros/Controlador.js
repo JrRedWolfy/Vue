@@ -6,9 +6,9 @@ let Controlador = {
             <input v-model="buscar">
             </div>
 
-            <aside class ="derecha">
+            <div class ="derecha">
                 <button>BIBLIOTECA</button>
-            </aside>
+            </div>
 
         </div>
     `,
