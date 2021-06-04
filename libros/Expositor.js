@@ -1,6 +1,6 @@
 let Expositor = {
     template:`
-        <div class="portada">
+        <div>
             <h2> {{title | mayusculas}} </h2>
             <img :src="cover">
         </div>

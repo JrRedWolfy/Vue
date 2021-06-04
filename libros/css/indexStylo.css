@@ -3,9 +3,12 @@
 }
 
 #fijar {
+
     text-align: center;
     display: block;
+    background-color: seashell;
     width: 100%;
+
     position: fixed;
 }
 
@@ -19,7 +22,24 @@
 }
 
 .portada {
-    display: inline-block;
-    block-size: 30% 10% 20%;
+    display: block;
+    float: right;
+    block-size: 10% 10% 20%;
 }
 
+.end {
+    clear: both;
+}
+
+.derecha{
+    float: right;
+}
+
+.izquierda{
+    float: left;
+}
+
+.bajar{
+    padding-top: 320px;
+    position: relative;
+}

@@ -2,11 +2,11 @@ let Controlador = {
     template: `
         <div>
 
-            <div>
+            <div class ="izquierda">
             <input v-model="buscar">
             </div>
 
-            <aside>
+            <aside class ="derecha">
                 <button>BIBLIOTECA</button>
             </aside>
 

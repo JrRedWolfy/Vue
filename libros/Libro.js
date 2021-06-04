@@ -3,7 +3,7 @@ let Libro = {
     template: `
         <div>
 
-            <div v-for="(libro, index) in allLibros" :key="index"
+            <div class="portada" v-for="(libro, index) in allLibros" :key="index"
             >
             <expositor
             :title="libro.title"
