@@ -1,4 +1,3 @@
-
 let Libro = {
     template: `
         <div>
