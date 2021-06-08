@@ -3,14 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Libro</title>
+    <link rel="stylesheet" href="css/infoLibroStylo.css" />
 </head>
-<body>
+<body background="img/hojas.jpg">
    
     <div id="app">
-   
+        
+        <header id="fijar">
+
+            <h1 class="titulo">Titulo Libro</h1>
+            <div class="info">
+                <div v-html="escritor"></div>
+                <div class="derecha">Fecha Publicado Libro</div>
+            </div>
+        </header>
+        <div id="contenido">
+            <img :src="thumnail">    
+            <p class="desc"><img class="esquina" src="img/ser.jpg" alt=""><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel iste nihil delectus eaque, quos dolores distinctio officia architecto, sed a corporis nemo molestiae consequuntur eius facilis magni! Ducimus assumenda, repellat officia minus repudiandae ratione ad itaque sint, beatae minima, consectetur illum. Blanditiis, rem, quaerat harum accusamus explicabo in aliquam nostrum odit officiis, porro placeat. Officia, ipsum ducimus temporibus debitis quam rerum. Numquam suscipit omnis soluta. Nulla natus numquam dolor hic rem nam recusandae fugit iure, asperiores minus. Harum itaque doloribus fugit provident culpa quos labore laudantium unde nesciunt atque aut veritatis nobis nulla fugiat similique excepturi possimus tenetur mollitia dolorum accusamus quo, esse qui sequi voluptatum. Iusto, recusandae. Assumenda, odio inventore rem totam expedita eum optio nesciunt neque hic officiis ullam fugit vel magnam eius consequuntur quos ratione porro, recusandae, iste quasi? Sed enim totam inventore quidem magnam saepe nobis rem soluta! Ratione, tempora nesciunt dolores perferendis quibusdam odio eligendi et eius obcaecati illum asperiores. Sapiente nisi autem corrupti reiciendis! Cumque explicabo distinctio quibusdam quos deleniti incidunt dolorem aspernatur inventore repellat. Laudantium nihil accusamus dolor quisquam nam rerum nostrum doloremque commodi perspiciatis dignissimos et odit, quo dolores deserunt, magnam iure in asperiores suscipit sunt iste necessitatibus quos eveniet. Quas, obcaecati!</b></p>
+                
+            <article class="desc"></article>
+            
+           
+        </div>
+
+        <div class="end"></div>
+
+        <Vista></Vista>
+
+        <footer id="pie">
+            <div>Paginas Libro</div>
+            <h4>Copyright,...</h4>
+        </footer>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="Vista.js"></script>
 
     <script>
         let vm = new Vue({
@@ -18,7 +46,7 @@
             data(){
 
                 return {
-
+                    escritor: "Escritor Libro"
 
                 }
             },

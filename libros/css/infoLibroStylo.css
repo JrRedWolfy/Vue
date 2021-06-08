@@ -1,0 +1,48 @@
+#fijar{
+    border: 1px solid;
+    text-align: center;
+    display: block;
+    background-color: seashell;
+    width: 96%;
+
+    position: fixed;
+}
+
+.titulo{
+    border: red 5px solid;
+}
+
+#contenido{
+    display: block;
+    padding-top: 100px;
+    border: blue 5px solid;
+    width: 96.45%;
+}
+
+.esquina{
+    float: left;
+    margin-right: 15px;
+}
+
+.desc{
+    width: 92%;
+    margin: 50px;
+    font-size: larger;
+    text-indent: 3em;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: 'Arial Narrow';
+}
+
+.end{
+    clear: both;
+}
+
+#pie{
+    border: red 5px solid;
+    width: 96.45%;
+}
+
+.derecha{
+    border: red 5px solid;
+}
