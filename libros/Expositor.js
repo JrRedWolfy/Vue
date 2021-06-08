@@ -1,7 +1,7 @@
 let Expositor = {
     template:`
         <div>
-            <img :src="cover">
+            <img :src="cover" href="infoLibro.html">
         </div>
     `,
 

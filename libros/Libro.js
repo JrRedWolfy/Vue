@@ -8,6 +8,7 @@ let Libro = {
             <div class="portada">
                 <expositor
                 :cover="libro.cover"
+                :code="libro.ID"
                 ></expositor>
             </div>
             </div>
