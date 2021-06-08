@@ -4,19 +4,34 @@
     display: block;
     background-color: seashell;
     width: 96%;
+    margin-bottom: 12px;
 
     position: fixed;
 }
 
 .titulo{
-    border: red 5px solid;
+    border: red 1px solid;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.info{
+    padding-top: 4px;
+    border: green 1px solid;
+}
+
+.derecha{
+    border: red 1px solid;
+    margin-left: 150px;
+    margin-right: 90px;
+    display: inline;
 }
 
 #contenido{
     display: block;
     padding-top: 115px;
-    border: blue 5px solid;
-    width: 96.45%;
+    border: blue 1px solid;
+    width: 96.8%;
 }
 
 .esquina{
@@ -34,15 +49,20 @@
     font-family: 'Arial Narrow';
 }
 
+
+
 .end{
     clear: both;
 }
 
 #pie{
-    border: red 5px solid;
-    width: 96.45%;
+    border: black 1px solid;
+    background-color: seashell;
+    width: 96.8%;
 }
 
-.derecha{
-    border: red 5px solid;
+
+
+h4{
+    text-indent: 2em;
 }

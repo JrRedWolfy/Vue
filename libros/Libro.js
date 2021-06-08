@@ -16,6 +16,7 @@ let Libro = {
                 :pages="libro.pages"
                 :idioma="libro.language"
                 :publicado="libro.publisher_date"
+                :descarga="libro.url_details"
 
                 ></expositor>
             </div>

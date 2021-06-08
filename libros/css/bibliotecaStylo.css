@@ -1,0 +1,10 @@
+#fijar{
+    border: 1px solid;
+    text-align: center;
+    display: block;
+    background-color: seashell;
+    width: 96%;
+    margin-bottom: 12px;
+
+    position: fixed;
+}

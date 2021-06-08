@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Libro</title>
-    <link rel="stylesheet" href="css/infoLibroStylo.css" />
+    <link rel="stylesheet" href="css/infoLibroStylo.css"/>
 </head>
 <body background="img/hojas.jpg">
    
@@ -13,11 +13,12 @@
 
             <h1 class="titulo">Titulo Libro</h1>
             <div class="info">
-                <div v-html="escritor"></div>
-                <div>Idioma Libro</div>
-                <div>Paginas Libro</div>
-                <div class="derecha">Fecha Publicado Libro</div>
+                <div class="derecha" v-html="escritor"></div>
+                <div class="derecha">Idioma del libro: </div>
+                <div class="derecha"> Paginas</div>
+                <div class="derecha">Publicado el </div>
             </div>
+            <button>AGREGAR A MI BIBLIOTECA</button>
         </header>
         <div id="contenido">
             <img :src="thumnail">    
@@ -33,7 +34,7 @@
         <Vista></Vista>
 
         <footer id="pie">
-            <h4>Copyright,...</h4>
+            <h4>@Copyright, Queda prohibido copiar, reproducir, distribuir, publicar, transmitir, difundir, o en cualquier modo explotar cualquier parte de este servicio sin la autorización previa por escrito de Androidphoria o de los titulares correspondientes. Sin embargo, usted podrá bajar material a su computadora personal para uso exclusivamente personal o educacional y no comercial limitado a una copia por página.</h4>
         </footer>
 
     </div>
