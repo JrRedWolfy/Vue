@@ -11,18 +11,20 @@
         
         <header id="fijar">
 
-            <h1 class="titulo">Titulo Libro</h1>
+            <h1 class="titulo">{{libro.title}}</h1>
             <div class="info">
-                <div class="derecha" v-html="escritor"></div>
-                <div class="derecha">Idioma del libro: </div>
-                <div class="derecha"> Paginas</div>
-                <div class="derecha">Publicado el </div>
+                
+                <div class="derechaA">Escritor: </div>
+                <div class="derechaB" v-html="libro.author"> </div>
+                <div class="derecha">Idioma del libro: {{libro.language}}</div>
+                <div class="derecha">{{libro.pages}} Paginas</div>
+                <div class="derecha">Publicado el {{libro.publisher_date}}</div>
             </div>
             <button>AGREGAR A MI BIBLIOTECA</button>
         </header>
         <div id="contenido">
-            <img :src="thumnail">    
-            <p class="desc"><img class="esquina" src="img/ser.jpg" alt=""><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel iste nihil delectus eaque, quos dolores distinctio officia architecto, sed a corporis nemo molestiae consequuntur eius facilis magni! Ducimus assumenda, repellat officia minus repudiandae ratione ad itaque sint, beatae minima, consectetur illum. Blanditiis, rem, quaerat harum accusamus explicabo in aliquam nostrum odit officiis, porro placeat. Officia, ipsum ducimus temporibus debitis quam rerum. Numquam suscipit omnis soluta. Nulla natus numquam dolor hic rem nam recusandae fugit iure, asperiores minus. Harum itaque doloribus fugit provident culpa quos labore laudantium unde nesciunt atque aut veritatis nobis nulla fugiat similique excepturi possimus tenetur mollitia dolorum accusamus quo, esse qui sequi voluptatum. Iusto, recusandae. Assumenda, odio inventore rem totam expedita eum optio nesciunt neque hic officiis ullam fugit vel magnam eius consequuntur quos ratione porro, recusandae, iste quasi? Sed enim totam inventore quidem magnam saepe nobis rem soluta! Ratione, tempora nesciunt dolores perferendis quibusdam odio eligendi et eius obcaecati illum asperiores. Sapiente nisi autem corrupti reiciendis! Cumque explicabo distinctio quibusdam quos deleniti incidunt dolorem aspernatur inventore repellat. Laudantium nihil accusamus dolor quisquam nam rerum nostrum doloremque commodi perspiciatis dignissimos et odit, quo dolores deserunt, magnam iure in asperiores suscipit sunt iste necessitatibus quos eveniet. Quas, obcaecati!</b></p>
+            <img>    
+            <p class="desc"><img class="esquina" :src="libro.cover" alt=""><b v-html="libro.content"></b></p>
                 
             <article class="desc"></article>
             
@@ -31,16 +33,13 @@
 
         <div class="end"></div>
 
-        <Vista></Vista>
-
         <footer id="pie">
-            <h4>@Copyright, Queda prohibido copiar, reproducir, distribuir, publicar, transmitir, difundir, o en cualquier modo explotar cualquier parte de este servicio sin la autorización previa por escrito de Androidphoria o de los titulares correspondientes. Sin embargo, usted podrá bajar material a su computadora personal para uso exclusivamente personal o educacional y no comercial limitado a una copia por página.</h4>
+            <h4 class="copy">@Copyright, Queda prohibido copiar, reproducir, distribuir, publicar, transmitir, difundir, o en cualquier modo explotar cualquier parte de este servicio sin la autorización previa por escrito de Ciudad de Papel o de los titulares correspondientes. Sin embargo, usted podrá bajar material a su computadora personal para uso exclusivamente personal o educacional y no comercial limitado a una copia por página.</h4>
         </footer>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="Vista.js"></script>
 
     <script>
         let vm = new Vue({
@@ -48,14 +47,32 @@
             data(){
 
                 return {
-                    escritor: "Escritor Libro"
+                    escritor: "Escritor Libro",
+                    id: null,
+                    libro: null
 
                 }
             },
 
             components: {
                 
-            }
+            },
+
+            beforeMount() {
+                
+                let locationURL = new URL(window.location.href)
+                this.id = locationURL.searchParams.get('id')
+                console.log(this.id)
+
+                const miUrl = `https://www.etnassoft.com/api/v1/get/?id=${this.id}`
+                fetch(miUrl)
+                .then(response => response.json())
+                .then(data => {
+                    this.libro=data[0]
+                    console.log(this.libro)
+                })
+                
+            },
 
         })
 

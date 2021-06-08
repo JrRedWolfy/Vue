@@ -10,27 +10,36 @@
 }
 
 .titulo{
-    border: red 1px solid;
     margin-bottom: 4px;
     margin-top: 4px;
 }
 
 .info{
     padding-top: 4px;
-    border: green 1px solid;
+    border: 1px solid;
+}
+
+.derechaA{
+    margin-left: 50px;
+    margin-right: 0px;
+    display: inline;
+}
+
+.derechaB{
+    margin-left: 2px;
+    margin-right: 25px;
+    display: inline;
 }
 
 .derecha{
-    border: red 1px solid;
-    margin-left: 150px;
-    margin-right: 90px;
+    margin-left: 50px;
+    margin-right: 25px;
     display: inline;
 }
 
 #contenido{
     display: block;
     padding-top: 115px;
-    border: blue 1px solid;
     width: 96.8%;
 }
 
@@ -65,4 +74,13 @@
 
 h4{
     text-indent: 2em;
+}
+
+.copy{
+    padding: 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border: black 1px solid;
+    margin-left: 30px;
+    margin-right: 30px;
 }

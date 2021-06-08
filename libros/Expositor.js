@@ -1,11 +1,12 @@
 let Expositor = {
     template:`
         <div>
-            <img :src="cover" href="infoLibro.html">
+            
+            <a :title="titulo" :href="'infoLibro.html?id='+code"><img :src="cover"/></a>
         </div>
     `,
 
-    props: ['cover'],
+    props: ['cover', 'code', 'titulo'],
 
     data(){
         return {
