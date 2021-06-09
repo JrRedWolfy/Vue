@@ -3,16 +3,29 @@
     border: 1px solid;
     text-align: center;
     display: block;
-    background-color: seashell;
-    width: 96%;
+    background-color: #C6F579;
+    width: 98.4%;
 
     position: fixed;
     
 }
 
+.titulo {
+    font-family: Impact;
+    letter-spacing: 20px;
+    border: #4E6625 2px solid;
+    background-color: #769542;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
 .borde{
     border: 1px solid;
+    margin-left: 5px;
+    margin-top: 0px;
 }
+
 
 .button{
     border: 1px solid;
@@ -21,41 +34,53 @@
 
 .inline {
     list-style: none;
+    border: #8D9956 1px solid;
+    margin:0px;
+    padding: 0px;
     float: left;
 }
 
 
 .inline button{
-    background-color: skyblue;
+    background-color: #C6D483;
 }
 
 .portada {
 
     
     display: block;
-    border: red 5px solid;
+    border: rgb(101, 233, 97) 1px solid;
     float: left;
     padding-top: 50px;
-    width: 430px;
+    width: 465px;
     height: 510px;
     max-height: 510px;
     text-align: center;
+}
 
+.boton{
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+}
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
 }
 
 .end {
     clear: both;
 }
 
-.derecha{
-    float: right;
-}
-
-.izquierda{
-    float: left;
+.biblioteca{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .bajar{
-    padding-top: 310px;
+    margin-left: 5px;
+    padding-top: 180px;
 }

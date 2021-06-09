@@ -1,8 +1,7 @@
 let Expositor = {
     template:`
         <div>
-            
-            <a :title="titulo" :href="'infoLibro.html?id='+code"><img :src="cover"/></a>
+            <a :title="titulo" :href="'infoLibro.html?id='+code" target="_blank"><img :src="cover"/></a>
         </div>
     `,
 

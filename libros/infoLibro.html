@@ -20,11 +20,13 @@
                 <div class="derecha">{{libro.pages}} Paginas</div>
                 <div class="derecha">Publicado el {{libro.publisher_date}}</div>
             </div>
-            <button>AGREGAR A MI BIBLIOTECA</button>
+            
+            
+            <Guardar></Guardar><button id="empujar" class="boton"><a :href="libro.url_download">Descargar Pdf</a></button>
         </header>
         <div id="contenido">
             <img>    
-            <p class="desc"><img class="esquina" :src="libro.cover" alt=""><b v-html="libro.content"></b></p>
+            <p class="desc"><img class="esquina" :src="libro.thumbnail" alt=""><b v-html="libro.content"></b></p>
                 
             <article class="desc"></article>
             
@@ -40,6 +42,9 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="Guardado.js"></script>
+    <script src="Expositor.js"></script>
+    <script src="Biblio.js"></script>
 
     <script>
         let vm = new Vue({
@@ -49,13 +54,13 @@
                 return {
                     escritor: "Escritor Libro",
                     id: null,
-                    libro: null
-
+                    libro: null,
+                    biblioteca: [],
                 }
             },
 
             components: {
-                
+                Guardar, Expositor, Biblio
             },
 
             beforeMount() {

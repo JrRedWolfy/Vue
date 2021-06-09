@@ -5,6 +5,33 @@
     background-color: seashell;
     width: 96%;
     margin-bottom: 12px;
+}
 
-    position: fixed;
+.portada {
+
+    
+    display: block;
+    float: left;
+    padding-top: 5px;
+    width: 465px;
+    height: 510px;
+    max-height: 510px;
+    text-align: center;
+}
+
+
+#pie{
+    border: black 1px solid;
+    background-color: seashell;
+    width: 96.8%;
+}
+
+.infor{
+    text-indent: 2em;
+    padding: 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border: black 1px solid;
+    margin-left: 30px;
+    margin-right: 30px;
 }

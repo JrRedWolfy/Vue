@@ -1,13 +1,8 @@
 let Controlador = {
     template: `
         <div>
-
-            <div class ="izquierda">
-            <input v-model="buscar">
-            </div>
-
-            <div class ="derecha">
-                <button>BIBLIOTECA</button>
+            <div>
+                <button class="boton"><a href="biblioteca.html">BIBLIOTECA</a></button>
             </div>
 
         </div>

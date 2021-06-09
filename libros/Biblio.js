@@ -1,9 +1,8 @@
-
-let Libro = {
+let Biblio = {
     template: `
         <div>
 
-            <div v-for="(libro, index) in allLibros" :key="index"
+            <div v-for="(libro, index) in biblioteca" :key="index"
             >
             <div class="portada">
                 <expositor
@@ -20,8 +19,7 @@ let Libro = {
     data(){
         return {
 
-            libros: [],
-            allLibros: []
+            biblioteca: []
         }
 
     },
@@ -33,8 +31,6 @@ let Libro = {
     methods: {
 
         getBooks(){
-
-            date = 02
 
             do {
                 const URL = `https://www.etnassoft.com/api/v1/get/?keyword=&publisher_date=20${date}`
@@ -56,10 +52,6 @@ let Libro = {
         }
 
     },
-
-    mounted() {
-        this.getBooks()
-    }
 
 
 

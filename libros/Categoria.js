@@ -5,7 +5,7 @@ let Categoria = {
             <div v-for="(categoria, index) in categorias" :key="index"
             >
                 <ul class="inline">
-                <li><button class="button">{{categoria.name | mayusculas}}</button></li>
+                <li><button @click="categoria=categoria.name" class="button">{{categoria.name | mayusculas}}</button></li>
                 </ul>
             </div>
 
@@ -15,7 +15,9 @@ let Categoria = {
 
     data(){
         return {
-            categorias: []
+            categorias: [],
+            categoria: null,
+            libroCategoria: []
 
         }
     },
@@ -37,6 +39,18 @@ let Categoria = {
                     this.categorias=data
                     console.log(data)
                 })
+        },
+
+        getLibrosCategoria(){
+            
+            const URL = `https://www.etnassoft.com/api/v1/get/?category=${this.categoria}&criteria=most_viewed`
+            fetch(URL)
+                .then(response => response.json())
+                .then(data => {
+                    this.libroCategoria=data
+                })
+
+
         }
 
     },
